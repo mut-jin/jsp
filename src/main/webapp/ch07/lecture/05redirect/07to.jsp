@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.util.*"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,11 +8,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-	int number = 10;
-%>
-
-<%@ include file="includee.jsp" %>
-<%-- 공통변수 DATAFOLDER = "<%= dataFolder %>" --%>
+	<h1>07to.jsp 입니다.</h1>
+	<%
+	String name = (String) request.getAttribute("name");
+	%>
+	<h1>name 속성 : <%= name %></h1>
+	
 </body>
 </html>

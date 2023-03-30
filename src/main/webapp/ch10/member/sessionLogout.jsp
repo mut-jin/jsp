@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.util.*"%>
+
+<%
+	session.invalidate();
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,11 +12,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-	int number = 10;
-%>
-
-<%@ include file="includee.jsp" %>
-<%-- 공통변수 DATAFOLDER = "<%= dataFolder %>" --%>
+로그아웃하였습니다.
 </body>
 </html>
